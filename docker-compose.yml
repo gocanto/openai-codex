@@ -1,0 +1,13 @@
+services:
+  codex:
+    build:
+      context: .
+      args:
+        NPM_TOKEN: ${NPM_TOKEN}
+    env_file:
+      - .env
+    ports:
+      - "${NPM_PORT}-3000:3000"
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
