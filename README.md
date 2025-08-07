@@ -36,6 +36,16 @@ This setup isolates your local development environment from the Node.js and Open
 
 ## Usage
 
+### Export your OpenAI API key
+
+```shell
+# either export it directly
+export OPENAI_API_KEY="your-api-key-here"
+
+# or put it in a .env file alongside your docker-compose/Makefile:
+OPENAI_API_KEY=your-api-key-here
+```
+
 ### Build & run containers
 
 ```bash
